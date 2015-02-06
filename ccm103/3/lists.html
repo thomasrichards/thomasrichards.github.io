@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Lists - CCM 103</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/docs.css">
+		
+		
+		
+	</head>
+	
+	<body>
+		
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-xs-12 page-header">
+					<h1>Lists</h1>
+					
+				</div><!-- .col-xs-12 -->
+				<div class="col-xs-9">
+					<h2>&lt;ul&gt; Unordered lists</h2>
+					<ul>
+								<li>1kg King Edward potatoes</li>
+								<li>100ml milk</li>
+								<li>50g salted butter</li>
+								<li>Freshly grated nutmeg</li>
+								<li>Salt and pepper to taste</li>
+							</ul>
+					<h2>&lt;ol&gt; Ordered Lists: </h2>
+					<ol>
+								<li>Chop potatoes into quarters</li>
+								<li>Simmer in salted water for 15-20 minutes until tender</li>
+								<li>Heat milk, butter and nutmeg</li>
+								<li>Drain potatoes and mash</li>
+								<li>Mix in the milk mixture</li>
+							</ol>
+
+					
+					<h3>Definition lists</h3>
+					<p>Definition lists consist of three parts:</p>
+					<ol>
+						<li>The &lt;dl&gt; tag- defines a description list</li>
+						<li>The &lt;dt&gt; tag - terms and names; and</li>
+						<li>The &lt;dd&gt; tag - description</li>
+					</ol>
+					
+					<div class="example">
+					<dl>
+					<dt>Sashimi</dt>
+					<dd>Sliced raw fish that is served with condiments such as shredded daikon radish or ginger root, wasabi and soy sauce</dd>
+					<dt>Scale</dt>
+					<dd>A device used to accurately measure the weight of ingredients</dd>
+					<dd>A technique by which the scales are removed from the skin of a fish</dd>			<dt>Scamorzo</dt>
+					<dd>An Italian cheese usually made from whole cow's milk (although it was traditionally made from buffalo milk)</dd>
+						</dl>
+					</div>
+					
+					<div class="highlight">
+						<pre>
+							<code class="language-html" data-lang="html">
+&lt;dl&gt;
+
+	&lt;dt&gt;Sashimi&lt;/dt&gt;
+	&lt;dd&gt;Sliced raw fish that is served with condiments such as shredded daikon radish or ginger root, wasabi and soy sauce&lt;/dd&gt;
+
+	&lt;dt&gt;Scale&lt;/dt&gt;
+	&lt;dd&gt;A device used to accurately measure the weight of ingredients&lt;/dd&gt;
+	&lt;dd&gt;A technique by which the scales are removed from the skin of a fish&lt;/dd&gt;
+
+	&lt;dt&gt;Scamorzo&lt;/dt&gt;
+	&lt;dd&gt;An Italian cheese usually made from whole cow&#x27;s milk (although it was traditionally made from buffalo milk)&lt;/dd&gt;
+
+&lt;/dl&gt;
+							</code>
+						</pre>
+					</div>
+				<h3>Nested Lists</h3>
+				<div class="example">
+	<ul>
+				<li>Mousses</li>
+				<li>Pastries
+					<ul>
+						<li>Croissant</li>
+						<li>Mille-feuille</li>
+						<li>Palmier</li>
+						<li>Profiterole</li>
+					</ul>
+				</li>
+				<li>Tarts</li>
+			</ul>
+				</div><!-- .example -->
+
+				<div class="highlight">
+					<pre>
+						<code class="language-html" data-lang="html">
+&lt;ul&gt;
+	&lt;li&gt;Mousses&lt;/li&gt;
+	&lt;li&gt;Pastries
+		&lt;ul&gt;
+			&lt;li&gt;Croissant&lt;/li&gt;
+			&lt;li&gt;Mille-feuille&lt;/li&gt;
+			&lt;li&gt;Palmier&lt;/li&gt;
+			&lt;li&gt;Profiterole&lt;/li&gt;
+		&lt;/ul&gt;
+	&lt;/li&gt;
+	&lt;li&gt;Tarts&lt;/li&gt;
+&lt;/ul&gt;
+						</code>
+					</pre>
+				</div>					
+						
+					<h3>Starting an &lt;ol&gt; at any number</h3>
+					
+					<div class="example">
+						<ol start="50">
+						  <li>Coffee</li>
+						  <li>Tea</li>
+						  <li>Milk</li>
+						</ol>
+					</div><!-- .example -->
+<!-- <div class="zero-clipboard"><span class="btn-clipboard">Copy</span></div> -->
+					<div class="highlight">
+						<pre>
+							<code class="language-html" data-lang="html">
+&lt;ol start=&quot;50&quot;&gt;
+  &lt;li&gt;Coffee&lt;/li&gt;
+  &lt;li&gt;Tea&lt;/li&gt;
+  &lt;li&gt;Milk&lt;/li&gt;
+&lt;/ol&gt;
+							</code>
+						</pre>
+					</div>
+				<a href="lists.html" title="lists" class="btn btn-lg btn-primary" target="_blank">Learning Links</a>
+				
+						
+				</div><!-- .col-xs-9 -->
+				<div class="col-xs-3">
+					
+				</div><!-- .col-xs-3 -->
+			</div><!-- .row -->
+			
+		</div><!-- .container -->
+		
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+		
+		
+		
+	</body>
+
+
+
+<html>
