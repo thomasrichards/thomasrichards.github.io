@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<title>Tables - CCM 103</title>
+		
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<link rel="stylesheet" href="../assets/css/docs.css">
+		
+	</head>
+	
+	<body>
+		
+		<div class="container">
+			
+			<div class="row">
+				<div class="col-xs-12 page-header">
+					<h1>Tables</h1>
+					
+				</div><!-- .col-xs-12 -->
+				<div class="col-xs-9">
+					<h3>Basic Table Structure</h3>
+					<div class="example">
+	<table>
+				<tr>
+					<td>15</td>
+					<td>15</td>
+					<td>30</td>
+				</tr>
+				<tr>
+					<td>45</td>
+					<td>60</td>
+					<td>45</td>
+				</tr>
+				<tr>
+					<td>60</td>
+					<td>90</td>
+					<td>90</td>
+				</tr>
+			</table>
+					</div><!-- .example -->
+
+					<div class="highlight">
+						<pre>
+							<code class="language-html" data-lang="html">
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;td&gt;15&lt;/td&gt;
+		&lt;td&gt;15&lt;/td&gt;
+		&lt;td&gt;30&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;45&lt;/td&gt;
+		&lt;td&gt;60&lt;/td&gt;
+		&lt;td&gt;45&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;td&gt;60&lt;/td&gt;
+		&lt;td&gt;90&lt;/td&gt;
+		&lt;td&gt;90&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+							</code>
+						</pre>
+					</div>
+					<h3>Table Headings</h3>
+					<div class="example">
+	<table>
+				<tr>
+					<th></th>
+					<th scope="col">Saturday</th>
+					<th scope="col">Sunday</th>
+				</tr>
+				<tr>
+					<th scope="row">Tickets sold:</th>
+					<td>120</td>
+					<td>135</td>
+				</tr>
+				<tr>
+					<th scope="row">Total sales:</th>
+					<td>$600</td>
+					<td>$675</td>
+				</tr>
+			</table>
+					</div><!-- .example -->
+
+					<div class="highlight">
+						<pre>
+							<code class="language-html" data-lang="html">
+&lt;table&gt;
+	&lt;tr&gt;
+			&lt;th&gt;&lt;/th&gt;
+			&lt;th scope=&quot;col&quot;&gt;Saturday&lt;/th&gt;
+			&lt;th scope=&quot;col&quot;&gt;Sunday&lt;/th&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Tickets sold:&lt;/th&gt;
+			&lt;td&gt;120&lt;/td&gt;
+			&lt;td&gt;135&lt;/td&gt;
+		&lt;/tr&gt;
+		&lt;tr&gt;
+			&lt;th scope=&quot;row&quot;&gt;Total sales:&lt;/th&gt;
+			&lt;td&gt;$600&lt;/td&gt;
+			&lt;td&gt;$675&lt;/td&gt;
+		&lt;/tr&gt;
+&lt;/table&gt;
+							</code>
+						</pre>
+					</div>
+					<h3>Spanning Columns</h3>
+					<div class="example">
+	<table>
+				<tr>
+					<th></th>
+					<th>9am</th>
+					<th>10am</th>
+					<th>11am</th>
+					<th>12am</th>
+				</tr>
+				<tr>
+					<th>Monday</th>
+					<td colspan="2">Geography</td>
+					<td>Math</td>
+					<td>Art</td>
+				</tr>
+				<tr>
+					<th>Tuesday</th>
+					<td colspan="3">Gym</td>
+					<td>Home Ec</td>
+				</tr>
+			</table>
+					</div><!-- .example -->
+
+					<div class="highlight">
+						<pre>
+							<code class="language-html" data-lang="html">
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;th&gt;&lt;/th&gt;
+		&lt;th&gt;9am&lt;/th&gt;
+		&lt;th&gt;10am&lt;/th&gt;
+		&lt;th&gt;11am&lt;/th&gt;
+		&lt;th&gt;12am&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Monday&lt;/th&gt;
+		&lt;td colspan=&quot;2&quot;&gt;Geography&lt;/td&gt;
+		&lt;td&gt;Math&lt;/td&gt;
+		&lt;td&gt;Art&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;Tuesday&lt;/th&gt;
+		&lt;td colspan=&quot;3&quot;&gt;Gym&lt;/td&gt;
+		&lt;td&gt;Home Ec&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+							</code>
+						</pre>
+					</div>
+					<h3>Spanning Rows</h3>
+					<div class="example">
+	<table>
+				<tr>
+					<th></th>
+					<th>ABC</th>
+					<th>BBC</th>
+					<th>CNN</th>
+				</tr>
+				<tr>
+					<th>6pm - 7pm</th>
+					<td rowspan="2">Movie</td>
+					<td>Comedy</td>
+					<td>News</td>
+				</tr>
+				<tr>
+					<th>7pm - 8pm</th>
+					<td>Sport</td>
+					<td>Current Affairs</td>
+				</tr>
+			</table>
+					</div><!-- .example -->
+
+					<div class="highlight">
+						<pre>
+							<code class="language-html" data-lang="html">
+&lt;table&gt;
+	&lt;tr&gt;
+		&lt;th&gt;&lt;/th&gt;
+		&lt;th&gt;ABC&lt;/th&gt;
+		&lt;th&gt;BBC&lt;/th&gt;
+		&lt;th&gt;CNN&lt;/th&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;6pm - 7pm&lt;/th&gt;
+		&lt;td rowspan=&quot;2&quot;&gt;Movie&lt;/td&gt;
+		&lt;td&gt;Comedy&lt;/td&gt;
+		&lt;td&gt;News&lt;/td&gt;
+	&lt;/tr&gt;
+	&lt;tr&gt;
+		&lt;th&gt;7pm - 8pm&lt;/th&gt;
+		&lt;td&gt;Sport&lt;/td&gt;
+		&lt;td&gt;Current Affairs&lt;/td&gt;
+	&lt;/tr&gt;
+&lt;/table&gt;
+							</code>
+						</pre>
+					</div>
+				</div><!-- .col-xs-9 -->
+				<div class="col-xs-3">
+					
+				</div><!-- .col-xs-3 -->
+			</div><!-- .row -->
+			
+		</div><!-- .container -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+	</body>
+<html>
+
