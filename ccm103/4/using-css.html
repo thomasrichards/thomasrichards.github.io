@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="Learning by creating, EdTech, educational technology">
+		<meta name="author" content="Thomas Richards">
+		<meta name="description" content="Learning by creating is an educational philosophy supported by educaitonal technologies" />
+		
+		<title>Using CSS - CCM 103</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h1>Using CSS</h1>
+					</div><!-- .page-header -->
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-xs-12">
+					<h2>Using External CSS</h2>
+				</div><!-- .col-xs-12 -->
+			</div>
+			<div class="row">
+				<div class="col-md-8">
+					<pre>
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Using External CSS&lt;/title&gt;
+		<span style="color:red;">&lt;link href=&quot;css/styles.css&quot; type=&quot;text/css&quot; rel=&quot;stylesheet&quot; /&gt;</span>
+&lt;/head&gt;
+&lt;body&gt;
+	&lt;h1&gt;Potatoes&lt;/h1&gt;
+	&lt;p&gt;There are dozens of different potato varieties. They are usually described as early, second early and maincrop potatoes.&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;
+					</pre>					
+				</div><!-- .col-md-8 -->
+				
+		<div class="col-md-4">
+			<img src="screenshot.png" class="img-responsive img-rounded">
+		</div><!-- .col-md-4 -->
+			</div><!-- .row -->
+					
+				
+				<div class="row">
+					<div class="col-xs-12">
+					<h2>Using Internal CSS</h2>
+					
+					<pre>
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+	&lt;head&gt;
+		&lt;title&gt;Using Internal CSS&lt;/title&gt;
+		<span style="color:red;">
+	&lt;style type=&quot;text/css&quot;&gt;
+		body {
+			font-family: arial;
+			background-color: rgb(185,179,175);}
+		h1 {
+			color: rgb(255,255,255);}
+	&lt;/style&gt;</span>
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Potatoes&lt;/h1&gt;
+		&lt;p&gt;There are dozens of different potato varieties. They are usually described as early, second early and maincrop potatoes.&lt;/p&gt;
+	&lt;/body&gt;
+&lt;/html&gt;						
+						
+					</pre>
+											
+				
+				
+					
+				</div><!-- .col-xs-12 -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+		
+		
+	</body>
+</html>
