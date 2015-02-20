@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+		<meta name="keywords" content="Learning by creating, EdTech, educational technology">
+		<meta name="author" content="Thomas Richards">
+		<meta name="description" content="Learning by creating is an educational philosophy supported by educaitonal technologies" />
+		
+		<title>CSS Selectors - CCM 103</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+		<style type="text/css" media="screen">
+		.selector, .css {color:#2295CE;}
+		.selector {text-transform:uppercase;}
+		</style>
+		
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div class="page-header">
+						<h1>CSS Selectors</h1>
+					</div><!-- .page-header -->
+					<h2>Table of CSS Selectors</h2>
+					<table class="table">
+						<tr>
+							<th>Selector</th>
+							<th>Meaning</th>
+							<th>Example</th>
+						</tr>
+						<tr>
+							<td class="selector">Universal Selector</td>
+							<td>Applies to all elements in the document</td>
+							<td><span class="css">* {}</span><br />Targets all elements on the page</td>
+						</tr>
+						<tr>
+							<td class="selector">Type Selector</td>
+							<td>Matches element names</td>
+							<td><span class="css">h1, h2, h3 {}</span><br />Targets the &lt;h1&gt;, &lt;h2&gt; and &lt;h3&gt; elements</td>
+						</tr>
+						<tr>
+							<td class="selector">Class Selector</td>
+							<td>Matches an element whose class attribute has a value that matches the one specified after the period symbol</td>
+							<td><span class="css">.note {}</span><br />Targets any elements whose class attribute as a value of note<br />p.note {}<br />Targets only &lt;p&gt; elements whose class attribute has value of note</td>
+						</tr>
+						<tr>
+							<td class="selector">ID Selector</td>
+							<td>Matches an element whose id attribute has a vlaue that matches the one specified after the pound or hash symbold</td>
+							<td><span class="css">#introduction {}</span><br />Targets athe leement whose id attribrute has a value of introduction</td>
+						</tr>
+						<tr>
+							<td class="selector">Child Selector</td>
+							<td>Matches an element that is a direct child of another</td>
+							<td><span class="css">li>a {}</span><br />Targets any &lt;a&gt; elements that are children of an &lt;li&gt; element (but not other &lt;a&gt; elements in the page)</td>
+				
+						</tr>
+						<tr>
+							<td class="selector">Descendant Selector</td>
+							<td>Matches an element that is a descendent of antoher specified element (not just a direct child of that element)</td>
+							<td><span class="css">p a {}</span><br />Targets any &lt;a&gt; elements that sit inside a &lt;p&gt; element, even if there are other elements nested between them. </td>
+						</tr>
+						<tr>
+							<td class="selector">Adjacent Sibling Selector</td>
+							<td>Matches an element that is the next sibling of another</td>
+							<td><span class="css">h1+p {}</span><br />Targets the first &lt;p&gt; element after any &lt;h1&gt; element (but not other &lt;p&gt; elements)</td>
+						</tr>
+						<tr>
+							<td class="selector">General Sibling Selector</td>
+							<td>Matches an element that is a sibling of another, although it does not have to be directly preceding element</td>
+							<td><span class="selector">h1~p {}</span><br />If you had two &lt;p&gt; elements that are sibling of an &lt;h1&gt; element, this rule would apply to both</td>
+						</tr>
+					</table>
+				</div><!-- .col-xs-12 -->
+			</div><!-- .row -->
+		</div><!-- .container -->
+		
+		
+	</body>
+	</html>
