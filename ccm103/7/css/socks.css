@@ -8,14 +8,16 @@
 	 font-weight: bold;
 }
 
-.navbar-default .navbar-nav>li>a {
-  color: #FFF;
-  
+.navbar-default .navbar-nav>li>a { color: #FFF;}
+
+.navbar-default .navbar-toggle .icon-bar { background-color: #FFF; }
+i.feature {	font-size:100px;}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+  color: #FF5800;
+  background-color: #FFF;
 }
 
-i.feature {
-	font-size:100px;
-}
 .btn-blue {
 	background-color:#FFF;
 	border-color:#3448E4;
@@ -26,6 +28,16 @@ i.feature {
 	background-color:#FFF;
 	border-color:#FF5800;
 	color:#FF5800;
+}
+
+.form-control {
+	border: 1px solid #FF5919;
+}
+
+.footer .btn-default {
+  color: #FF5800;
+  background-color: #FFF;
+  border-color: #FF5919;
 }
 
 #features {padding: 100px 0px;}
@@ -56,6 +68,17 @@ i.feature {
 }
 
 #technology .features {margin-top:24px;}
+
+#action {
+	padding:75px 0px;
+	background-color:#4C61FF;
+}
+
+#action h2 {text-align:right;color:#FFF;}
+
+#action .input-group {margin-top:19px;}
+
+#action .btn-default {border:1px solid #FF5800;color:#FF5800;}
 
 #faq {padding: 50px 0px 50px 0px;}
 #faq h2 {text-align:right;}
